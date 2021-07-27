@@ -1,1 +1,2 @@
-These files together make the awesome web design for the Heathcare Services Website.
+These files together make the awesome web design for the Heathcare Services Website.Moreover, I used many CDN's
+like flickity, Font Awesome and Google Font. And I also used iframe of another website. And many more features
