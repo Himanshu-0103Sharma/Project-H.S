@@ -1,0 +1,283 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgba(0, 0, 0,0.1);
+}
+
+
+.menu-btn{
+  float: right;
+}
+
+
+.menu-btn i{
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+#click{
+  display: none;
+}
+
+nav{
+  padding: 20px 10px 40px 10px;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  border-bottom: 1px solid rgba(128,128,128,0.4);
+}
+
+nav ul li{
+  display: inline;
+  margin: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+nav ul li a{
+  color: black;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+a.active{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+nav ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+#logo{
+  float: left;
+  font-family: 'Russo One', sans-serif;
+  font-size: 42px;
+  margin-top: -14px;
+  margin-left: 50px;
+}
+
+nav ul{
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-cell img{
+  height: 72vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#registration{
+  background-color: white;
+  margin: 100px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+
+#registration h1{
+  font-size: 43px;
+  padding: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+
+.screen1,.screen2,.screen3,.screen4{
+  margin: 100px 50px 250px 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+
+.screen1img,.screen3img{
+  float: left;
+  height: 40vh;
+  margin-right: 40px;
+  margin-top: -40px;
+}
+
+
+.screen2img,.screen4img{
+  float: right;
+  height: 40vh;
+  margin-left: 40px;
+  margin-top: -40px;
+}
+
+
+
+.connect{
+  text-align: center;
+  margin: 0 0 3% 0;
+}
+
+
+
+
+.connect ul li{
+  display: inline;
+  font-size: 40px;
+  margin: 5%;
+}
+
+
+
+.connect a i{
+  transition: 0.5s;
+}
+
+.connect a i:hover{
+  transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: fit-content;
+  padding: 20px 0px;
+  background-color: black;
+  color: white;
+}
+
+footer p{
+  font-size: 15px;
+  float: right;
+  position: relative;
+  top: -10px;
+  right: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+
+  p{
+    font-size: 13px;
+  }
+
+  .menu-btn i{
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+
+
+  nav ul{
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+
+
+  #click:checked ~ ul{
+    left: 0%;
+  }
+
+  nav ul li{
+    margin: 40px 0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+
+
+  .carousel-cell img{
+    height: 40vh;
+  }
+
+
+  .screen1img,.screen2img,.screen3img,.screen4img{
+    height: 30vh;
+    float: none;
+  }
+
+  .screen1 p,.screen2 p,.screen3 p,.screen4 p{
+    clear: both;
+  }
+
+  .connect a{
+    margin: 35px;
+  }
+}
